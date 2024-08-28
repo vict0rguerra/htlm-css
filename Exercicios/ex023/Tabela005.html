@@ -8,81 +8,62 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
-            border-collapse: collapse;
-        }
-        caption{
-            background-color: lightblue;
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
-        }
         th,td{
             border: 1px solid black;
-            padding: 10px;
+            padding: 8px;
         }
-        col.Nomes{
-            background-color: aqua;
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        .azul{
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <h1>Exercicio</h1>
-        <table>
-            <colgroup>
-                <col class="Nomes"> 
-                <col class=" Filme">
-                <col class="Grupos">
-            </colgroup>
+    <h1>Exercicio de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="azul">
+        </colgroup>
 
-            <caption>Filmes Favoritos</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Grupos</th>
-                    <th scope="col" >Nomes</th>
-                    <th scope="colgroup" colspan="3">Filme</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th rowspan="3" scope="rowgroup">Mulheres</th>
-                    <td>Ana Maria</td>
-                    <td>Alien</td>
-                    <td>Rambo</td>
-                    <td>Vingadores</td>
-                </tr>
-                <tr>
-                    <td>Camila Silva</td>
-                    <td>Titanic</td>
-                    <td>O Poderoso Chefão</td>
-                    <td>Harry Potter</td>
-                </tr>
-                <tr>
-                    <td>Juliana Costa</td>
-                    <td>Matrix</td>
-                    <td>Jurassic Park</td>
-                    <td>A Origem</td>
-                </tr>
-                <tr>
-                    <th rowspan="3" scope="rowgroup">Homens</th>
-                    <td>Julio Cesar</td>
-                    <td>Gladiador</td>
-                    <td>Senhor dos Anéis</td>
-                    <td>Avatar</td>
-                </tr>
-                <tr>
-                    <td>Marcos Silva</td>
-                    <td>Clube da Luta</td>
-                    <td>Batman: O Cavaleiro das Trevas</td>
-                    <td>Forrest Gump</td>
-                </tr>
-                <tr>
-                    <td>Rafael Souza</td>
-                    <td>Star Wars</td>
-                    <td>O Exterminador do Futuro</td>
-                    <td>Rocky</td>
-                </tr>
-            </tbody>
-        </table>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Professor</td>
+        </tr>
+
+    </table>
 </body>
 </html>
